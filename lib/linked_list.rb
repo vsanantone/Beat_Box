@@ -102,5 +102,4 @@ class LinkedList
     current_node.next_node = nil
     data
   end
-
 end

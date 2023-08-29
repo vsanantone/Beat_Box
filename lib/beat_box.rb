@@ -16,7 +16,6 @@ class BeatBox
   end
 
   def play
-    
     beats = @list.to_string
     `say -r 100 -v Cellos #{beats}`
     beats

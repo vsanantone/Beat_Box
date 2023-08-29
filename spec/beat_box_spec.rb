@@ -38,11 +38,11 @@ RSpec.describe BeatBox do
   describe '#play method' do
     it 'can play sounds' do
       bb = BeatBox.new
-      bb.append("do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do")
+      bb.append("deep doo ditt woo hoo shu do")
 
-      # expect(bb.count).to eq(6)
-      # expect(bb.list.count).to eq(6)
-      expect(bb.play).to eq("do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do")
+      expect(bb.count).to eq(7)
+      expect(bb.list.count).to eq(7)
+      expect(bb.play).to eq("deep doo ditt woo hoo shu do")
     end
   end
 end

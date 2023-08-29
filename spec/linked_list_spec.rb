@@ -22,20 +22,15 @@ RSpec.describe LinkedList do
       list.append("doop")
       expect(list.head).to be_a(Node)
       expect(list.head.data).to eq("doop")
-      expect(list.head.next_node).to eq(nil) ##???
+      expect(list.head.next_node).to eq(nil)
 
       list.append("deep")
-      # expect(list.head.next_node).to be_a(Node) ##???
-      expect(list.tail).to be_a(Node) ##???
-      # expect(list.head.next_node.data).to eq('deep')
+      expect(list.tail).to be_a(Node)
       expect(list.tail.data).to eq("deep")
-      # expect(list.head.next_node.next_node).to eq(nil)
 
       list.append("dop")
       expect(list.head.next_node.next_node).to be_a(Node) ##???
-      # expect(list.head.next_node.next_node.data).to eq('dop')
       expect(list.tail.data).to eq("dop")
-      # expect(list.head.next_node.next_node.next_node).to eq(nil)
     end
   end
 
